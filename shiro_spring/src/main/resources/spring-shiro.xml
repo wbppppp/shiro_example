@@ -19,8 +19,6 @@
             </list>
         </property>
 
-       <!--<property name="rememberMeManager.cookie.maxAge" value="10"></property>-->
-
         <!--注入会话管理器-->
         <property name="sessionManager" ref="sessionManager" />
 
