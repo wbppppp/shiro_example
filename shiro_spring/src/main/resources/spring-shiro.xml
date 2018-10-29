@@ -5,7 +5,7 @@
 
     <!--1.配置安全管理器-->
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
-        <property name="cacheManager" ref="cacheManager"/>
+        <!--<property name="cacheManager" ref="cacheManager"/>-->
         <!--配置一个realm时可以直接用这个配置-->
         <!--<property name="realm" ref="jdbcRealm" />-->
         <!--配置认证器（配置多个realm）-->
@@ -52,9 +52,9 @@
     <!--
         ShiroReaml继承AuthorizingRealm，他实现了CacheManagerAware接口，提供了缓存的功能
     -->
-    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+    <!--<bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
         <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"/>
-    </bean>
+    </bean>-->
 
     <!--3.配置realm-->
     <bean id="jdbcRealm" class="com.wbp.spring.shiro.realm.ShiroRealm">

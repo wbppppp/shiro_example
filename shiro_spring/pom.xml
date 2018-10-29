@@ -23,6 +23,7 @@
 
     <dependencies>
 
+        <!--spring依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -59,7 +60,7 @@
             <version>${spring.version}</version>
         </dependency>
 
-
+        <!--shiro依赖-->
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-core</artifactId>
@@ -84,11 +85,12 @@
             <version>${shrio.version}</version>
         </dependency>
 
-        <!--<dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.15</version>
-        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
 
     </dependencies>
 
